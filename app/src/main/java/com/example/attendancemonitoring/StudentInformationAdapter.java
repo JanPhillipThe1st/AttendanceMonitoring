@@ -115,22 +115,6 @@ public class StudentInformationAdapter extends RecyclerView.Adapter<StudentInfor
                     e.printStackTrace();
                     Toast.makeText(holder.itemView.getContext(), "SMS sending failed...",Toast.LENGTH_SHORT).show();
                 }
-//                 String ACCOUNT_SID = "AC9d9f2accb15ae21d44727c2991c1cfcf";
-//                 String AUTH_TOKEN = "37972eaa20c8171718c12c34a6bb6f9c";
-//                Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-//                Message message = Message.creator(
-//                        new com.twilio.type.PhoneNumber(new String ("+63"+studentData.get("guardianContactNo").toString())),
-//                        new com.twilio.type.PhoneNumber("+12764008180"),
-//                        "Hello").create();
-//                try {
-//                    ((Activity) holder.itemView.getContext()).startActivity(smsIntent);
-//                    ((Activity) holder.itemView.getContext()).finish();
-//                    Toast.makeText(holder.itemView.getContext(), "SMS sent to "+"+63"+studentData.get("guardianContactNo").toString()+".",
-//                            Toast.LENGTH_LONG).show();
-//                } catch (android.content.ActivityNotFoundException ex) {
-//                    Toast.makeText( holder.itemView.getContext(),
-//                            "Error: "+ex.getMessage(), Toast.LENGTH_SHORT).show();
-//                }
 
             });
             return  true;
