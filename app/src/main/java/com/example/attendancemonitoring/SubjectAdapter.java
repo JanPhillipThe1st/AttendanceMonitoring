@@ -166,7 +166,6 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectH
                         notTimeDialog.create().show();
                     }
                 }else{
-                    //TODO: Delete block below if not testing
 //                    String userType = "Teacher";
 //                    Intent checkAttendance = new Intent(context, CheckAttendance.class);
 //                    checkAttendance.putExtra("userType",userType);

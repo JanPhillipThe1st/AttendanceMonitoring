@@ -69,7 +69,6 @@ public class AddSubjectBySectionCode extends AppCompatActivity {
 
         btnSearchStudentByEDP.setOnClickListener(view -> {
             //Show the progress dialog here while we search for the student online
-            //TODO: Add subject details preview
             progressDialog.show();
             db.collection("Subjects").where(Filter.equalTo("section_code",tvSectionCode.getText().toString())).get()
                     .addOnSuccessListener(queryDocumentSnapshots -> {

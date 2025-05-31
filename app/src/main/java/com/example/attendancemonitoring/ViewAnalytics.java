@@ -60,7 +60,6 @@ public class ViewAnalytics extends AppCompatActivity {
                             int totalLate = 0;
                             int totalExcused = 0;
                             for (DocumentSnapshot attendanceSnapshot:attendanceQueryDocumentSnapshots){
-                                //TODO: populate charts here
                                 if (attendanceSnapshot.getString("attendance_remark").trim().equals("Present")){
                                     totalPresent+=1;
                                 }
