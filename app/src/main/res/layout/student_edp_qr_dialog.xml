@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Title for the QR Code -->
+    <TextView
+        android:id="@+id/qrCodeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan this QR code\nfor EDP Number"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_reg"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ImageView to hold the QR Code -->
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="QR Code Image"
+        android:scaleType="fitCenter" />
+
+    <!-- Close Button -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_reg"
+        android:backgroundTint="@color/secondary"
+        android:text="Close"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>

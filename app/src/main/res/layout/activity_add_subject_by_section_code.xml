@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSubjectBySectionCode">
+    <LinearLayout
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Input Section Code:"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayout3"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_below="@id/txtLayout2"
+            android:hint="Section Code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tvSectionCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingVertical="6dp"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSearchStudentByEDP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#18BA21"
+            app:cornerRadius="4dp"
+            android:fontFamily="@font/montserrat_reg"
+            android:padding="10dp"
+            android:text="SEARCH"
+            android:textColor="#F0FFE8"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginBottom="8dp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/btnScanStudentQR"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/button_card_rounded"
+            android:fontFamily="@font/montserrat_reg"
+            android:textColor="@color/white" >
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/qr_scan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat"
+                android:textAlignment="center"
+                android:layout_marginBottom="24dp"
+                android:text="SCAN QR"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

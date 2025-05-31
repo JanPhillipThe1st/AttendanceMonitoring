@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal"
+    android:layout_gravity="center|center_horizontal"
+    android:background="@drawable/scc_gradient"
+    tools:context=".IdentityVerificationScreen">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="SELECT VERIFICATION METHOD"
+        android:fontFamily="@font/montserrat_reg"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:gravity="center|center_vertical"
+        android:layout_gravity="center|center_vertical"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btnFaceRecognition"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center|clip_vertical|center_vertical"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/rounded_card"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/face_recognition" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Face\nVerification"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:fontFamily="@font/montserrat_reg"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/btnFingerprintRecognition"
+            android:gravity="center|center_horizontal"
+            android:layout_gravity="center|center_horizontal"
+            android:background="@drawable/rounded_card"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fingerprintscan"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:fontFamily="@font/montserrat_reg"
+                android:layout_marginVertical="10dp"
+                android:text="Fingerprint\nVerification"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

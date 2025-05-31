@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowGreen"
+        android:id="@+id/toolbarReg">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Registration"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scrollReg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbarReg"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/relativeScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnChooseProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/baseline_person_outline_24" />
+
+            <TextView
+                android:id="@+id/tvSelectPhotoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Photo"
+                android:textAlignment="center" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout6"
+                android:hint="EDP Number">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tvEDPNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="7"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLayout1"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginVertical="4dp"
+                    android:hint="First Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingVertical="6dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtLayout2"
+                    style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtLayout1"
+                    android:layout_marginVertical="4dp"
+                    android:hint="Middle Name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txtMiddleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:paddingVertical="6dp"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout3"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout2"
+                android:hint="Last Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout4"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout3"
+                android:hint="Contact No."
+                app:prefixText="+63">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout5"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout4"
+                android:hint="Address: Province/Municipality/Barangay">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout6"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout5"
+                android:hint="Guardian Name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtGuardianName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout7"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout6"
+                android:hint="Guadian Contact No."
+                app:prefixText="+63">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtGuardianContactNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <Spinner
+                    android:id="@+id/spinnerTrackStrand"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dialog" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:hint="Day">
+
+                <Spinner
+                    android:id="@+id/spinnerGrade"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:dropDownSelector="@color/white"
+                    android:popupBackground="@color/white"
+                    android:spinnerMode="dialog" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout8"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout7"
+                android:hint="Institutional E-Mail">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmailReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout9"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout8"
+                android:hint="Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPasswordReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtLayout10"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout9"
+                android:hint="Confirm Password">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtConfirmPasswordReg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:paddingVertical="6dp"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLayout10"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/yellowGreen"
+                android:text="Register"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

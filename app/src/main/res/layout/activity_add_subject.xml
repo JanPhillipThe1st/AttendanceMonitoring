@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AddSubjectActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellowGreen"
+        android:id="@+id/toolbarSubject">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectRelative1"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_reg"
+                android:layout_centerInParent="true"
+                android:text="Subjects"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjectList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarSubject"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/btnAddDetails"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#FFFFFF"
+        android:tooltipText="Add Subject"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:shadowDx="0"
+        android:shadowDy="1"
+        android:textSize="0sp"
+        app:icon="@drawable/add_subject_icon"
+        app:iconGravity="top"
+        app:iconPadding="10dp"
+        app:iconSize="70dp"
+        app:iconTint="#00FFFFFF"
+        android:visibility="gone"
+        app:iconTintMode="add" />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbSubject"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/pbSubject"
+        android:id="@+id/loadingText"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

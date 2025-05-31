@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:remove="android:maxSdkVersion" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/newlogoscc"
+        android:label="SCC Attendance Monitoring"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AttendanceMonitoring"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewStudentAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".AddStudentInSubject"
+            android:exported="false"
+            android:screenOrientation="userPortrait"
+            tools:replace="screenOrientation" />
+        <activity
+            android:name=".ViewStudentInSubject"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPassword"
+            android:exported="false" />
+        <activity
+            android:name=".AttendanceRemarksDetailedView"
+            android:exported="false" />
+        <activity
+            android:name=".AddSubjectBySectionCode"
+            android:exported="false" />
+        <activity
+            android:name=".ViewJoinRequests"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAnalytics"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherSubjects"
+            android:exported="false" />
+        <activity
+            android:name=".CheckAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".StudentAttendance"
+            android:exported="false" />
+        <activity
+            android:name=".IdentityVerificationScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashBoardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageUser"
+            android:exported="false" />
+        <activity
+            android:name=".FingerprintAuth"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherAttendanceList"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherScannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QRCodeGeneratorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubjectDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddSubjectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TeacherDashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

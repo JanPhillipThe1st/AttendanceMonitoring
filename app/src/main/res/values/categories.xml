@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subject_categories_array">
+        <item>MATH</item>
+        <item>SCIENCE</item>
+        <item>LANGUAGE</item>
+        <item>PE</item>
+        <item>TECHVOC</item>
+        <item>REL_ED</item>
+        <item>GEN_ED</item>
+    </string-array>
+</resources>

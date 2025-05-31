@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="class_schedules_array">
+        <item>MW</item>
+        <item>TTH</item>
+        <item>M-F</item>
+        <item>SAT</item>
+    </string-array>
+    <string-array name="grades_selection">
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="track_strand_selection">
+        <item>ABM</item>
+        <item>GAS</item>
+        <item>STEM</item>
+        <item>TVL-ICT</item>
+        <item>TVL-HE</item>
+        <item>SPORTS</item>
+        <item>ART</item>
+        <item>HUMSS</item>
+    </string-array>
+</resources>

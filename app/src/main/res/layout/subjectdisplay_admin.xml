@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="12dp"
+    android:background="@color/dirtyWhite"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/detailsLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            android:paddingVertical="5dp"
+            android:id="@+id/detailsLinear1">
+
+            <ImageView
+                android:id="@+id/ivCategory"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/class_background" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Course Code"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:layout_weight="2"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_reg"
+                android:id="@+id/txtDCourseCode"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Descriptive Title"
+                android:textColor="@color/secondary"
+                android:fontFamily="@font/montserrat_reg"
+                android:layout_weight="1"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:id="@+id/txtDDescriptiveTitle"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="20dp"
+            android:id="@+id/detailsLinear2"
+            android:layout_below="@id/detailsLinear1">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_reg"
+                android:text="Section Code"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:id="@+id/txtDSectionCode"
+                />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/detailsLinear4"
+            android:layout_below="@id/detailsLinear2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Day"
+                android:textColor="@color/secondary" />
+
+            <TextView
+                android:id="@+id/txtDDay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Day"
+                android:textColor="@color/secondary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:id="@+id/detailsLinear5"
+            android:layout_below="@id/detailsLinear4">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Time in:"
+                android:textColor="@color/secondary" />
+
+            <TextView
+                android:id="@+id/txtTimeStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Time"
+                android:textColor="@color/secondary" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/detailsLinear6"
+            android:layout_below="@id/detailsLinear5">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Time out:"
+                android:textColor="@color/secondary" />
+
+            <TextView
+                android:id="@+id/txtTimeEnd"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/montserrat_light"
+                android:text="Time"
+                android:textColor="@color/secondary" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/detailsLinear7"
+            android:layout_below="@id/detailsLinear6">
+
+            <Button
+                android:id="@+id/btnAttendee"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="0dp"
+                android:backgroundTint="#29B524"
+                android:fontFamily="@font/montserrat_reg"
+                android:padding="0dp"
+                android:text="View Students"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:fontFamily="@font/montserrat_reg"
+                android:text="Check Attendance"
+                android:textSize="12dp"
+                android:padding="0dp"
+                android:layout_margin="0dp"
+                android:backgroundTint="#29B524"
+                android:textColor="@color/white"
+                android:id="@+id/btnGenerateQRCode"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
